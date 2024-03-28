@@ -8,6 +8,8 @@ abc097_a.zig
 #########################################
 #########################################
 #########################################
+[my solution]
+
 const std = @import("std");
 const stdout = std.io.getStdOut();
 var buffer: [1000000]u8 = undefined;
