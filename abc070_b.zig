@@ -60,7 +60,7 @@ fn getvecu() []const u64 {
 
 
 fn max(a: u64, b: u64) u64 {
-    if (a >= b) {
+    if (a > b) {
         return a;
     } else {
         return b;
@@ -68,7 +68,7 @@ fn max(a: u64, b: u64) u64 {
 }
 
 fn min(a: u64, b: u64) u64 {
-    if (a >= b) {
+    if (a > b) {
         return b;
     } else {
         return a;
@@ -84,7 +84,15 @@ pub fn main() !void {
     const b = A[1];
     const c = A[2];
     const d = A[3];
-    var t=max(min(b,d)-max(a,c),0);
-    try stdout.writer().print("{d}\n", .{ t});
+    var t = min(b,d)-max(a,c);
+    
+    if (t < 0) {
+      t = 0;
+      }
+    else if ( t > 10000000 ) {
+      t = 0;
+      }
+    
+    try stdout.writer().print("{d}\n", .{t});
 }
 ##############################
