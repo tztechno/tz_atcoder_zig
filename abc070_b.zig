@@ -3,7 +3,7 @@ abc070_b.zig
 [create original func]
 
 fn max(a: u64, b: u64) u64 {
-    if (a > b) {
+    if (a >= b) {
         return a;
     } else {
         return b;
@@ -11,7 +11,7 @@ fn max(a: u64, b: u64) u64 {
 }
 
 fn min(a: u64, b: u64) u64 {
-    if (a > b) {
+    if (a >= b) {
         return b;
     } else {
         return a;
@@ -60,7 +60,7 @@ fn getvecu() []const u64 {
 
 
 fn max(a: u64, b: u64) u64 {
-    if (a > b) {
+    if (a >= b) {
         return a;
     } else {
         return b;
@@ -68,7 +68,7 @@ fn max(a: u64, b: u64) u64 {
 }
 
 fn min(a: u64, b: u64) u64 {
-    if (a > b) {
+    if (a >= b) {
         return b;
     } else {
         return a;
