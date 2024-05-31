@@ -27,6 +27,8 @@ QusaiHroub
 ```
 ---
 ```
-
+出力
+try stdout.writer().print("{s}\n", .{ ans }); 
+try stdout.writer().print("{d}\n", .{ ans });  
 ```
 ---
