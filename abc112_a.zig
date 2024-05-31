@@ -52,7 +52,7 @@ pub fn main() !void {
     allocator = arena.allocator();
     const n = getu();
     if (n==1) {
-      var ans = "Hello Wolrd";
+      var ans = "Hello World";
       try stdout.writer().print("{s}\n", .{ ans }); 
     }
     else {
