@@ -5,6 +5,7 @@ https://github.com/ziglang/zig
 QusaiHroub
 
 ### latest
+
 ---
 ```
 
@@ -24,6 +25,23 @@ QusaiHroub
 ---
 ```
 
+```
+---
+```
+
+```
+---
+```
+
+```
+---
+```
+
+```
+---
+```
+var ans: []const u8 = ""; 
+try stdout.writer().print("{s}\n", .{ans});
 ```
 ---
 ```
